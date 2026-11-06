@@ -1,0 +1,33 @@
+[package]
+name = "web-kypbep-backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Веб-фреймворк
+axum = "0.7"
+tokio = { version = "1.0", features = ["full"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors", "trace"] }
+lazy_static = "1.4"
+
+# База данных с пулом соединений
+rusqlite = { version = "0.31", features = ["bundled"] }
+r2d2 = "0.8" 
+
+# Безопасность
+jsonwebtoken = "9.2"
+argon2 = "0.5"
+password-hash = "0.5"
+parking_lot = "0.12"
+rand = "0.8"
+
+# Сериализация
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Утилиты
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"

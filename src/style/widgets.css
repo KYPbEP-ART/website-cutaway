@@ -1,0 +1,113 @@
+/* Утилиты выделения */
+.hl-green { color: var(--green); }
+.hl-orange { color: var(--orange); }
+.hl-blue { color: var(--blue); }
+
+.tag {
+  display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px;
+  border: 1px solid currentColor; letter-spacing: 0.5px; text-transform: uppercase;
+}
+.tag.green { color: var(--green); }
+.tag.orange { color: var(--orange); }
+.tag.blue { color: var(--blue); }
+
+/* Ретро-картинки */
+.retro-img {
+  position: relative; overflow: hidden; border-radius: 6px; border: 1px solid var(--border);
+}
+.retro-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  image-rendering: pixelated;
+  filter: contrast(1.08) saturate(1.15) brightness(0.97);
+}
+.retro-img::after {
+  content: ""; position: absolute; inset: 0;
+  background: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 2px, rgba(0,0,0,0.18) 3px);
+  mix-blend-mode: multiply; pointer-events: none;
+}
+.retro-img::before {
+  content: ""; position: absolute; inset: 0;
+  box-shadow: inset 0 0 0 1px rgba(57,255,136,0.15); pointer-events: none;
+}
+.placeholder-img {
+  height: 150px; display: flex; align-items: center; justify-content: center;
+  color: var(--text-dim); font-size: 12px; background: var(--bg-2);
+}
+
+/* Карточки проектов */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 👈 Всегда 3 колонки */
+  gap: 24px;
+}
+
+.card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+  overflow: hidden; display: flex; flex-direction: column;
+  transition: border-color .2s ease, transform .2s ease;
+}
+.card:hover { border-color: var(--green-dim); transform: translateY(-2px); }
+.card .retro-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-2);
+}
+.card-body { padding: 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.card-title { font-size: 17px; color: var(--text); }
+.card-desc { color: var(--text-dim); font-size: 13.5px; flex: 1; }
+
+/* Статусы */
+.status {
+  font-size: 11px; padding: 3px 8px; border-radius: 4px; white-space: nowrap;
+  letter-spacing: 0.5px; text-transform: uppercase;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.status::before {
+  content: ""; width: 8px; height: 8px; border-radius: 50%;
+  background-color: currentColor; flex-shrink: 0;
+}
+.status.done { color: var(--green); }
+.status.progress { color: var(--orange); }
+.status.frozen { color: var(--blue); }
+
+/* Кнопки и ссылки */
+.card-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 6px; font-size: 13px; }
+.btn {
+  display: inline-block; padding: 6px 14px; border-radius: 4px; font-size: 13px;
+  border: 1px solid var(--green); color: var(--green);
+  transition: background .2s ease, color .2s ease;
+}
+.btn:hover { background: var(--green); color: var(--bg); text-decoration: none; }
+.resource-link { color: var(--blue); font-size: 12.5px; }
+.resource-link:hover { color: var(--green); }
+
+/* Карточки новостей */
+.news-card {
+  display: flex; gap: 20px; background: var(--card); border: 1px solid var(--border);
+  border-radius: 8px; padding: 18px; margin-bottom: 16px; flex-wrap: wrap;
+}
+.news-card .retro-img { width: 220px; height: 130px; flex-shrink: 0; }
+.news-body { flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 8px; }
+.news-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+.news-date { color: var(--text-dim); font-size: 12px; }
+.news-title { font-size: 16px; color: var(--text); }
+.news-desc { color: var(--text-dim); font-size: 13.5px; }
+
+/* Контакты */
+.contacts-grid { display: flex; gap: 16px; flex-wrap: wrap; }
+.contact-item {
+  display: flex; align-items: center; gap: 10px; background: var(--card);
+  border: 1px solid var(--border); padding: 14px 18px; border-radius: 8px;
+  font-size: 14px; min-width: 200px; transition: border-color .2s ease;
+}
+.contact-item:hover { border-color: var(--green-dim); }
+.contact-label { color: var(--text-dim); font-size: 11px; text-transform: uppercase; display: block; }
+.contact-value { color: var(--text); }

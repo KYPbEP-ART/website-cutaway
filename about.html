@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYPbEP.ART — Обо мне</title>
+    <link rel="stylesheet" href="/src/style/main.css">
+    <link rel="stylesheet" href="/src/style/profile.css">
+</head>
+<body>
+
+    <nav>
+        <div class="wrap">
+        <div class="brand">KYPbEP.ART</div>
+        <div class="links">
+            <a href="/index.html">главная</a>
+            <a href="/index.html#news">новости</a>
+            <a href="/index.html#projects">проекты</a>
+            <a href="/about.html" class="active">обо мне</a>
+        </div>
+        </div>
+    </nav>
+
+    <div class="profile-layout">
+        
+        <!-- ЛЕВАЯ КОЛОНКА: SIDEBAR -->
+        <aside class="sidebar">
+        <div class="sidebar-avatar">
+            <img src="/src/assets/kypbep/KYPbEP.png" alt="KYPbEP">
+        </div>
+        <h2 class="sidebar-name">KYPbEP.ART</h2>
+        <div class="sidebar-role">JFNK</div>
+
+        <div class="sidebar-block">
+            <div class="sidebar-block-title">// друзья</div>
+            <ul class="sidebar-list">
+            <li><a href="#">Jarasft</a></li>
+            <li><a href="#">Fedoksys</a></li>
+            <li><a href="#">Nelikvid</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <div class="sidebar-block-title">// уровень знаний</div>
+            <ul class="sidebar-list">
+                <li>
+                    <span class="status progress" style="font-size: 10px; padding: 2px 6px;"> - уверенно</span>
+                </li>
+                <li>
+                    <span class="status frozen" style="font-size: 10px; padding: 2px 6px;"> - базово</span>
+                </li>
+                <li>
+                    <span class="status done" style="font-size: 10px; padding: 2px 6px;"> - изучаю</span>
+                </li>
+
+
+
+            </ul>
+        </div>
+
+        <div class="sidebar-block">
+            <div class="sidebar-block-title">// контакты</div>
+            <ul class="sidebar-list">
+            <li><span class="contact-label">telegram</span> <a href="#">@kypbep</a></li>
+            <li><span class="contact-label">github</span> <a href="#">github.com/KYPbEP-ART</a></li>
+            <li><span class="contact-label">discord</span> <a href="#">kypbep.art</a></li>
+            <li><span class="contact-label">emeil</span> <a href="#">kypbep.art@gmail.com</a></li>
+            </ul>
+        </div>
+        </aside>
+
+        <!-- ПРАВАЯ КОЛОНКА: ОСНОВНОЙ КОНТЕНТ -->
+        <main class="main-content">
+        
+        <!-- БАННЕР -->
+        <div class="profile-banner retro-img">
+            <img src="/src/assets/kypbep/banner.png" alt="Баннер">
+        </div>
+
+        <!-- КРАТКО ОБО МНЕ -->
+        <section class="profile-section">
+            <div class="section-title">кратко обо мне</div>
+            <h2 class="section-heading">мой стек и инструменты</h2>
+            
+            <div class="about-grid">
+            <div class="about-block">
+                    <div class="about-block-title">Языки</div>
+                    <div class="about-block-text">
+                    <span class="hl-orange">Python</span>, 
+                    <span class="hl-blue">Rust</span>, 
+                    <span class="hl-blue">TypeScript</span>,
+                    <span class="hl-blue">C#</span>, 
+                    <span class="hl-green">Go</span>,
+                    <span class="hl-green">Lua</span>, 
+                </div>
+            </div>
+
+            <div class="about-block">
+                <div class="about-block-title">Инструменты и технологии</div>
+                <div class="about-block-text">
+                    <span class="hl-blue">Git</span>,
+                    <span class="hl-blue">SQL</span>,
+                    <span class="hl-blue">NixOS</span>,
+                </div>
+            </div>
+
+            <div class="about-block">
+                <div class="about-block-title">Программы</div>
+                <div class="about-block-text">
+                    <span class="hl-orange">VS Code</span>,
+                    <span class="hl-blue">Blender</span>,
+                    <span class="hl-orange">Aseprite</span>,
+                    <span class="hl-blue">Krita</span>,
+                    <span class="hl-orange">Draw.io</span>,
+                    <span class="hl-orange">Obsidian</span>,
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- ЛЕНТА ЛИЧНЫХ НОВОСТЕЙ -->
+        <section class="profile-section">
+            <div class="section-title">лента</div>
+            <h2 class="section-heading">личные новости</h2>
+            <div id="personal-news-container">
+            <p style="color: var(--text-dim);">Загрузка ленты...</p>
+            </div>
+        </section>
+
+        </main>
+    </div>
+
+    <footer>&copy; KYPbEP.ART — 2026</footer>
+
+    <script type="module" src="/src/ts/main.ts"></script>
+</body>
+</html>

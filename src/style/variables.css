@@ -1,0 +1,16 @@
+:root {
+  --bg: #0b0d0e;
+  --bg-2: #111416;
+  --card: #14181a;
+
+  --green: #39ff88;
+  --orange: #ffb454;
+  --blue: #4dd2ff;
+
+  --green-dim: #1f8a4c;
+  --text: #d7e0dd;
+  --text-dim: #7d8b88;
+  --border: #232a2c;
+  
+  --font: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}

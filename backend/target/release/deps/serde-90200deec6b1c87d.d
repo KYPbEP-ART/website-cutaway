@@ -1,0 +1,14 @@
+/home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/deps/serde-90200deec6b1c87d.d: /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/build/serde-4c83456450d141bc/out/private.rs
+
+/home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/deps/libserde-90200deec6b1c87d.rlib: /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/build/serde-4c83456450d141bc/out/private.rs
+
+/home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/deps/libserde-90200deec6b1c87d.rmeta: /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs /home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/build/serde-4c83456450d141bc/out/private.rs
+
+/home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/lib.rs:
+/home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/integer128.rs:
+/home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/mod.rs:
+/home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/de.rs:
+/home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.229/src/private/ser.rs:
+/home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/build/serde-4c83456450d141bc/out/private.rs:
+
+# env-dep:OUT_DIR=/home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/build/serde-4c83456450d141bc/out

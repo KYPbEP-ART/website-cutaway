@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYPbEP.ART</title>
+  <!-- Подключаем основной CSS, который импортирует остальные -->
+  <link rel="stylesheet" href="/src/style/main.css">
+</head>
+<body>
+
+    <nav>
+    <div class="wrap">
+      <div class="brand">KYPbEP.ART</div>
+      <div class="links">
+        <a href="/index.html">главная</a>
+        <a href="/index.html#news">новости</a>
+        <a href="/index.html#projects">проекты</a>
+        <a href="/about.html">обо мне</a>
+      </div>
+      
+      <!-- 👈 НОВЫЙ БЛОК: Контейнер для авторизации -->
+      <div class="auth-container" id="auth-container">
+        <!-- Сюда TypeScript вставит либо кнопки, либо профиль пользователя -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- 👈 НОВЫЙ БЛОК: Модальное окно для Входа/Регистрации (скрыто по умолчанию) -->
+  <div id="auth-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-title">// авторизация</span>
+        <button class="modal-close" onclick="closeAuthModal()">×</button>
+      </div>
+      
+      <!-- Вкладки внутри модалки -->
+      <div class="modal-tabs">
+        <button class="tab-btn active" onclick="switchTab('login')">вход</button>
+        <button class="tab-btn" onclick="switchTab('register')">регистрация</button>
+      </div>
+
+      <!-- Форма входа -->
+      <form id="login-form" class="auth-form">
+        <div class="form-group">
+          <label>логин</label>
+          <input type="text" id="login-username" required autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label>пароль</label>
+          <input type="password" id="login-password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn btn-full">войти в систему</button>
+        <p class="form-message" id="login-message"></p>
+      </form>
+
+      <!-- Форма регистрации -->
+      <form id="register-form" class="auth-form" style="display: none;">
+        <div class="form-group">
+          <label>логин</label>
+          <input type="text" id="reg-username" required autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label>email</label>
+          <input type="email" id="reg-email" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label>пароль</label>
+          <input type="password" id="reg-password" required autocomplete="new-password">
+        </div>
+        <button type="submit" class="btn btn-full">создать аккаунт</button>
+        <p class="form-message" id="reg-message"></p>
+      </form>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="avatar">
+        <img src="/src/assets/kypbep/KYPbEP.png" alt="KYPbEP">
+      </div>
+      <div class="hero-text">
+        <div class="prompt">user@kypbep:~$ whoami</div>
+        <h1 class="name">KYPbEP.ART<span class="cursor"></span></h1>
+        <div class="role">стартапер / разработчик / художник / инженер</div>
+        <p class="bio-short">
+          Инди-разработчик. Делаю продукты руками — от кода до графики.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-title">о себе</div>
+      <h2 class="section-heading">кто я и чем занимаюсь</h2>
+      <div class="about-text">
+        <p>
+          Работаю без инвесторов — <span class="hl-orange">своими силами</span>,
+          но с большим планом. Ниже — то, чем занимаюсь <span class="hl-blue">сейчас</span>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-title">проекты</div>
+      <h2 class="section-heading">над чем работаю</h2>
+      <div class="projects-grid" id="projects-container">
+        <!-- Сюда TypeScript будет вставлять карточки из JSON -->
+        <p style="color: var(--text-dim);">Загрузка проектов...</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="wrap">
+      <div class="section-title">новости</div>
+      <h2 class="section-heading">последнее</h2>
+      <div id="news-container">
+        <!-- Сюда TypeScript будет вставлять новости -->
+        <p style="color: var(--text-dim);">Загрузка новостей...</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div class="wrap">
+      <div class="section-title">контакты</div>
+      <h2 class="section-heading">на связи</h2>
+      <div class="contacts-grid">
+        <div class="contact-item">
+          <div><span class="contact-label">email</span>
+            <a class="contact-value" href="mailto:you@example.com">you@example.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div><span class="contact-label">github</span>
+            <a class="contact-value" href="#">github.com/kypbep</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; KYPbEP.ART — 2026</footer>
+
+  <!-- Подключаем TypeScript как модуль -->
+  <script type="module" src="/src/ts/main.ts"></script>
+</body>
+</html>

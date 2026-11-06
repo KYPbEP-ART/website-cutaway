@@ -1,0 +1,201 @@
+/* ---------- PROFILE LAYOUT ---------- */
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(250px, 25%) 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* На мобильных: одна колонка */
+@media (max-width: 768px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  height: fit-content;
+  position: sticky;
+  top: 80px;
+}
+
+.sidebar-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid var(--orange);
+  overflow: hidden;
+  background: var(--bg-2);
+}
+.sidebar-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sidebar-name {
+  font-size: 20px;
+  color: var(--text);
+  margin-top: 8px;
+}
+
+.sidebar-role {
+  color: var(--green);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-block {
+  width: 100%;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.sidebar-block-title {
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.sidebar-block-title::before {
+  content: "";
+}
+
+.sidebar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sidebar-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.sidebar-list a {
+  color: var(--text);
+  transition: color .2s ease;
+}
+.sidebar-list a:hover {
+  color: var(--green);
+  text-decoration: none;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0; /* Важно для grid, чтобы контент не вылезал */
+}
+
+.profile-banner {
+  width: 100%;
+  aspect-ratio: 3.8 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.profile-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+/* ---------- ABOUT GRID ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.about-block {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px;
+  transition: border-color .2s ease;
+}
+.about-block:hover {
+  border-color: var(--green-dim);
+}
+
+.about-block-title {
+  font-size: 13px;
+  color: var(--text);
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.about-block-text {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+/* ---------- PERSONAL NEWS ---------- */
+.personal-news-item {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--green);
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: border-color .2s ease;
+}
+.personal-news-item:hover {
+  border-left-color: var(--orange);
+}
+
+.personal-news-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.personal-news-title {
+  font-size: 15px;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.personal-news-date {
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.personal-news-desc {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+/* Активная ссылка в навигации */
+nav .links a.active {
+  color: var(--green);
+}

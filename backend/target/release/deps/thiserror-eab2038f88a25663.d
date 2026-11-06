@@ -1,0 +1,14 @@
+/home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/deps/thiserror-eab2038f88a25663.d: /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/lib.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/aserror.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/display.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/var.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/private.rs /home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/build/thiserror-a071ad3702028d1d/out/private.rs
+
+/home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/deps/libthiserror-eab2038f88a25663.rlib: /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/lib.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/aserror.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/display.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/var.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/private.rs /home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/build/thiserror-a071ad3702028d1d/out/private.rs
+
+/home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/deps/libthiserror-eab2038f88a25663.rmeta: /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/lib.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/aserror.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/display.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/var.rs /home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/private.rs /home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/build/thiserror-a071ad3702028d1d/out/private.rs
+
+/home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/lib.rs:
+/home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/aserror.rs:
+/home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/display.rs:
+/home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/var.rs:
+/home/kypbep/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.21/src/private.rs:
+/home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/build/thiserror-a071ad3702028d1d/out/private.rs:
+
+# env-dep:OUT_DIR=/home/kypbep/Project/ALFA/WEB-KYPbEP/v0.0.2/backend/target/release/build/thiserror-a071ad3702028d1d/out

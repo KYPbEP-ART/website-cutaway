@@ -1,0 +1,36 @@
+[
+    {
+        "id": "MFill",
+        "title": "MFill",
+        "status": "progress",
+        "statusText": "в разработке",
+        "description": "Конструктор Документов по шаблонам. Через Маски автоматизируй, заполнения данные в документах",
+        "img": "/src/assets/img_project/MFill.png",
+        "date": "2026.05.11",
+        "date_of_changes": "#",
+        "link": "/project.html?id=coregit"
+    },
+    {
+        "id": "CoreGit",
+        "title": "CoreGit",
+        "status": "progress",
+        "statusText": "в разработке",
+        "description": "«GitHub» для не программистов. Создавай проекты, скачивай аддоны, собери архитекутуру",
+        "img": "/src/assets/img_project/CoreGit.png",
+        "date": "2026.05.11",
+        "date_of_changes": "#",
+        "link": "/project.html?id=coregit"
+    },
+        {
+        "id": "Studio",
+        "title": "SP",
+        "status": "progress",
+        "statusText": "в разработке",
+        "description": "«Studio-Protokol» - Общайся, делись, да же если нет интернета. Протокол позволяет прыгать из сети в сеть",
+        "img": "/src/assets/img_project/CoreGit.png",
+        "date": "2026.05.11",
+        "date_of_changes": "#",
+        "link": "/project.html?id=coregit"
+    }
+
+]
